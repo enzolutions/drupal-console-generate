@@ -1,0 +1,25 @@
+{
+    "name": "drupal/console-generate",
+    "description": "Drupal Console generate commands",
+    "type": "drupal-console-library",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Jesus Manuel Olivas",
+            "email": "jesus.olivas@gmail.com"
+        },
+        {
+            "name": "enzo - Eduardo Garcia",
+            "email": "enzos@weknowinc.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {"Drupal\\Console\\Generate\\": "src"}
+    },
+    "require-dev": {
+        "drupal/console-core": "~1.0"
+    }
+}
