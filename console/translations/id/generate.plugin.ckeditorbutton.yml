@@ -1,0 +1,17 @@
+description: 'Hasilkan tombol plugin CKEditor.'
+help: 'Perintah <info>generate:plugin:ckeditorbutton</info> membantu anda menghasilkan tombol plugin CKEditor baru.'
+welcome: 'Selamat datang di penghasil tombol plugin CKEditor'
+options:
+    module: common.options.module
+    class: 'Nama kelas plugin'
+    label: 'Label plugin'
+    plugin-id: 'ID plugin. Catatan: Ini berhubungan pada nama plugin CKEditor. Ini merupakan argumen pertama pada fungsi CKEDITOR.plugins.add() pada berkas plugin.js.'
+    button-name: 'Nama tombol. Catatan: Ini berhubungan pada nama tombol CKEditor. Ini merupakan argumen pertama pada fungsi editor.ui.addButton() atau editor.ui.addRichCombo() pada berkas plugin.js.'
+    button-icon-path: 'Path dari gambar tombol. Ini merupakan path ke icon/gambar dari tombol.'
+questions:
+    module: common.questions.module
+    class: 'Masukkan nama kelas plugin'
+    label: 'Masukkan label plugin'
+    plugin-id: 'Masukkan ID plugin. Catatan: Ini berhubungan pada nama plugin CKEditor. Ini merupakan argumen pertama pada fungsi CKEDITOR.plugins.add() pada berkas plugin.js.'
+    button-name: 'Masukkan Nama tombol. Catatan: Ini berhubungan pada nama tombol CKEditor. Ini merupakan argumen pertama pada fungsi editor.ui.addButton() atau editor.ui.addRichCombo() pada berkas plugin.js.'
+    button-icon-path: 'Masukkan path dari gambar tombol'

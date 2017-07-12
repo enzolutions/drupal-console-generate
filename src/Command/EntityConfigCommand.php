@@ -2,18 +2,28 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\EntityConfigCommand.
+ * Contains \Drupal\Console\Generate\Command\EntityConfigCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\EntityConfigGenerator;
+use Drupal\Console\Generate\Generator\EntityConfigGenerator;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Utils\Validator;
 use Drupal\Console\Core\Utils\StringConverter;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class EntityConfigCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class EntityConfigCommand extends EntityCommand
 {

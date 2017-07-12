@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Generator\HelpGenerator.
+ * Contains \Drupal\Console\Generate\Generator\HelpGenerator.
  */
 
-namespace Drupal\Console\Generator;
+namespace Drupal\Console\Generate\Generator;
 
 use Drupal\Console\Core\Generator\Generator;
 use Drupal\Console\Extension\Manager;

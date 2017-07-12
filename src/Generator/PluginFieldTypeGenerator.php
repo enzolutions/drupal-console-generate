@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Generator\PluginFieldTypeGenerator.
+ * Contains \Drupal\Console\Generate\Generator\PluginFieldTypeGenerator.
  */
 
-namespace Drupal\Console\Generator;
+namespace Drupal\Console\Generate\Generator;
 
 use Drupal\Console\Core\Generator\Generator;
 use Drupal\Console\Extension\Manager;

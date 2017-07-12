@@ -2,20 +2,30 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\EntityContentCommand.
+ * Contains \Drupal\Console\Generate\Command\EntityContentCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\EntityContentGenerator;
+use Drupal\Console\Generate\Generator\EntityContentGenerator;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Utils\Validator;
 use Drupal\Console\Core\Style\DrupalStyle;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class EntityContentCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class EntityContentCommand extends EntityCommand
 {

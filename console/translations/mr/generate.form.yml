@@ -1,0 +1,29 @@
+description: 'नवीन "%s" उत्पन्न करा.'
+help: '<info>"%s"</info> आज्ञा आपल्याला नवीन "%s" उत्पन्न करण्यास मदत करते.'
+welcome: 'Drupal फॉर्म जनरेटर आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    class: 'फॉर्म क्लास नाव'
+    form-id: 'फॉर्म आयडी'
+    services: common.options.services
+    config-file: 'एक कॉन्फिग फाइल जोडा.'
+    inputs: common.options.inputs
+    path: 'फॉर्म पथ प्रविष्ट करा.'
+    menu-link-gen: 'मेनू लिंक उत्पन्न करा.'
+    menu-link-title: 'मेन्यू लिंकसाठी एक शीर्षक.'
+    menu-parent: 'मेनू पालक.'
+    menu-link-desc: 'मेन्यू लिंकसाठी एक वर्णन.'
+    routing: 'राउटिंग उत्पन्न करा.'
+questions:
+    module: common.questions.module
+    class: 'फॉर्म क्लास नाव प्रविष्ट करा.'
+    form-id: 'फॉर्म आयडी प्रविष्ट करा.'
+    services: common.questions.services
+    config-file: 'आपण कॉन्फिग फाइल उत्पन्न करू इच्छिता?'
+    inputs: common.questions.inputs
+    routing: 'या फॉर्मसाठी आपण एक मार्ग नोंदणी करु इच्छिता?'
+    path: 'पथ मार्ग प्रविष्ट करा.'
+    menu_link_gen: 'मेनू लिंक उत्पन्न करा.'
+    menu_link_title: 'मेन्यू लिंकसाठी एक शीर्षक.'
+    menu_parent: 'मेनू पालक.'
+    menu_link_desc: 'मेन्यू लिंकसाठी वर्णन.'

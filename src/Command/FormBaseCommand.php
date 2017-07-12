@@ -2,10 +2,20 @@
 
 /**
  * @file
- * Contains Drupal\Console\Command\GeneratorFormBaseCommand.
+ * Contains Drupal\Console\Generate\Command\FormBaseCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class FormBaseCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class FormBaseCommand extends FormCommand
 {

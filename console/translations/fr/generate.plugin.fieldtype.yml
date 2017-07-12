@@ -1,0 +1,19 @@
+description: 'Génère un plugin de type de champ.'
+help: 'La commande <info>generate:plugin:fieldtype</info> vous permet de générer un nouveau plugin de type de champ.'
+welcome: 'Bienvenue sur le générateur de plugin de type de champ de Drupal'
+options:
+    module: common.options.module
+    class: 'Nom de la classe du plugin'
+    label: 'Label du plugin'
+    plugin-id: 'Id du plugin'
+    description: 'Description du plugin'
+    default-widget: 'Widget de champ par défaut de ce plugin'
+    default-formatter: 'Formateur de champ par défaut de ce plugin'
+questions:
+    module: common.questions.module
+    class: 'Entrez le nom de la classe du plugin'
+    label: 'Entrez le label du plugin'
+    plugin-id: 'Entrez l''id du plugin'
+    description: 'Entrez la description du plugin'
+    default-widget: 'Entrez le widget de champ par défaut de ce plugin'
+    default-formatter: 'Entrez le formateur de champ par défaut de ce plugin'

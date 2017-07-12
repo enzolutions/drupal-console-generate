@@ -1,0 +1,13 @@
+description: 'Génère un nouveau type de contenu (nœud / bundle d''entité)'
+help: 'Utilisez : generate:contenttype <fancy> <Fancy> pour créer un nouveau nom de type de contenu avec le nom machine fancy et le nom lisible par les utilisateurs Fancy.'
+welcome: 'Bienvenue dans le générateur de Type de Contenu'
+options:
+    module: common.options.module
+    bundle-name: 'Le nom machine du type de contenu'
+    bundle-title: 'Le nom lisible par les utilisateurs du type de contenu'
+questions:
+    module: common.questions.module
+    bundle-name: 'Entrez le nom machine de votre type de contenu'
+    bundle-title: 'Entrez le nom lisible par les utilisateurs de votre type de contenu'
+message:
+    error-state1: placeholder

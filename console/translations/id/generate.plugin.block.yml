@@ -1,0 +1,22 @@
+description: 'Hasilkan blok plugin'
+help: 'Perintah <info>generate:plugin:block</info> membantu anda menghasilkan blok plugin baru.'
+welcome: 'Selamat datang pada penghasil blok plugin Drupal'
+options:
+    module: common.options.module
+    class: 'Nama kelas plugin'
+    label: 'Label plugin'
+    plugin-id: 'ID plugin'
+    inputs: common.options.inputs
+    services: common.options.services
+    theme-region: 'Wilayah tema untuk meletakkan blok plugin'
+questions:
+    module: common.questions.module
+    class: 'Masukkan nama kelas plugin'
+    label: 'Masukkan label plugin'
+    plugin-id: 'Masukkan ID Plugin'
+    inputs: common.questions.inputs
+    services: common.questions.services
+    theme-region: 'Enter the theme region to render the Plugin Block.'
+messages:
+    inputs: "\nAnda dapat menambahkan kolom input untu membuat konfigurasi spesial pada blok.\nIni opsional, tekan <info>Enter</info> untuk <info>melanjutkan</info>"
+    invalid-theme-region: 'Wilayah "%s" tidak valid'

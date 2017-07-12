@@ -1,0 +1,7 @@
+description: 'Génère un  fichier .module'
+help: 'La commande <info>generate:module:file</info> vous permet de générer un fichier .module'
+welcome: 'Bienvenue sur le générateur de module de Drupal'''
+options:
+    module: 'Le nom du module'
+questions:
+    module: 'Entrez le nom du module'

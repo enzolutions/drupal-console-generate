@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\CommandCommand.
+ * Contains \Drupal\Console\Generate\Command\CommandCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Drupal\Console\Command\Shared\ExtensionTrait;
 use Drupal\Console\Command\Shared\ServicesTrait;
@@ -16,12 +16,22 @@ use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Core\Command\Shared\ContainerAwareCommandTrait;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
-use Drupal\Console\Generator\CommandGenerator;
+use Drupal\Console\Generate\Generator\CommandGenerator;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Style\DrupalStyle;
 use Drupal\Console\Utils\Validator;
 use Drupal\Console\Utils\Site;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class CommandCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class CommandCommand extends Command
 {

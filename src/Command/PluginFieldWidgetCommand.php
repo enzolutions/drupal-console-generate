@@ -2,15 +2,15 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PluginFieldWidgetCommand.
+ * Contains \Drupal\Console\Generate\Command\PluginFieldWidgetCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\PluginFieldWidgetGenerator;
+use Drupal\Console\Generate\Generator\PluginFieldWidgetGenerator;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
@@ -20,12 +20,17 @@ use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Core\Field\FieldTypePluginManager;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class PluginFieldWidgetCommand
+ * Class PluginFieldWidgetCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class PluginFieldWidgetCommand extends Command
 {
     use ModuleTrait;

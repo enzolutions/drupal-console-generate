@@ -1,0 +1,13 @@
+description: 'नवीन सामग्री प्रकार उत्पन्न करा (नोड / संस्था बंडल)'
+help: 'use: generate:contenttype <fancy> <Fancy> फॅन्सीचे मशीन नाव आणि फॅन्सीचे मानवी-वाचनीय नाव असलेली नवीन सामग्री प्रकार नाव तयार करण्यासाठी तयार करा.'
+welcome: 'Drupal सामग्री प्रकार जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    bundle-name: 'सामग्रीचे प्रकारचे मशीन नाव.'
+    bundle-title: 'सामग्री प्रकारचे मानवी-वाचनीय नाव.'
+questions:
+    module: common.questions.module
+    bundle-name: 'आपल्या नवीन सामग्री प्रकारचे मशीन नाव प्रविष्ट करा.'
+    bundle-title: 'आपल्या नवीन सामग्री प्रकारचे मानवी-वाचनीय नाव प्रविष्ट करा.'
+message:
+    error-state1: प्लेसहोल्डर

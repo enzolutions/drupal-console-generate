@@ -2,17 +2,17 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\ServiceCommand.
+ * Contains \Drupal\Console\Generate\Command\ServiceCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Drupal\Console\Command\Shared\ServicesTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
-use Drupal\Console\Generator\ServiceGenerator;
+use Drupal\Console\Generate\Generator\ServiceGenerator;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -20,12 +20,17 @@ use Drupal\Console\Core\Command\Shared\ContainerAwareCommandTrait;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Core\Utils\StringConverter;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class ServiceCommand
+ * Class ServiceCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class ServiceCommand extends Command
 {
     use ServicesTrait;

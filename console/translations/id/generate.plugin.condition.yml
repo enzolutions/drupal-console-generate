@@ -1,0 +1,21 @@
+description: 'Hasilkan kondisi plugin.'
+help: 'Perintah <info>generate:plugin:conditon</info> membantu anda menghasilkan kondisi plugin.'
+welcome: 'Selamat data di penghasil kondisi plugin Drupal'
+options:
+    module: common.options.module
+    class: 'Nama kelas kondisi plugin'
+    label: 'Label kondisi plugin'
+    plugin-id: 'ID kondisi plugin'
+    context-definition-id: 'ID definisi konteks'
+    context-definition-label: 'label definisi konteks'
+    context-definition-required: 'Definisi konteks diperlukan (TRUE/FALSE)'
+questions:
+    module: common.questions.module
+    class: 'Masukkan nama kelas kondisi plugin'
+    label: 'Masukkan label kondisi plugin'
+    plugin-id: 'Masukkan ID kondisi plugin'
+    context-type: 'Tipe Konteks'
+    context-entity-type: 'Konteks tipe entitas'
+    context-definition-id: 'ID definisi konteks'
+    context-definition-label: 'Label definisi konteks'
+    context-definition-required: 'Definisi konteks diperlukan'

@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Generator\CommandGenerator.
+ * Contains \Drupal\Console\Generate\Generator\CommandGenerator.
  */
 
-namespace Drupal\Console\Generator;
+namespace Drupal\Console\Generate\Generator;
 
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Utils\TranslatorManagerInterface;

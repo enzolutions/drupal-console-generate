@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\CacheContextCommand.
+ * Contains \Drupal\Console\Generate\Command\CacheContextCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Drupal\Console\Command\Shared\ModuleTrait;
-use Drupal\Console\Generator\CacheContextGenerator;
+use Drupal\Console\Generate\Generator\CacheContextGenerator;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -20,6 +20,16 @@ use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Command\Shared\ServicesTrait;
 use Drupal\Console\Core\Utils\StringConverter;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class CacheContextCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class CacheContextCommand extends Command
 {

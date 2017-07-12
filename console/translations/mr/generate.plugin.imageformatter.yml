@@ -1,0 +1,12 @@
+description: 'प्रतिमा फॉर्मेटर प्लगइन उत्पन्न करा.'
+help: '<info>generate:plugin:imageformatter</info> कमांड आपल्याला एक नवीन प्रतिमा फॉर्मेटर प्लगइन उत्पन्न करण्यास मदत करते.'
+options:
+    module: common.options.module
+    class: 'प्लगइन वर्ग नाव.'
+    label: 'प्लगइन लेबल.'
+    plugin-id: 'प्लगिन आयडी.'
+questions:
+    module: common.questions.module
+    class: 'प्लगइन वर्ग नाव प्रविष्ट करा.'
+    label: 'प्लगइन लेबल प्रविष्ट करा.'
+    plugin-id: 'प्लगइन आयडी प्रविष्ट करा.'

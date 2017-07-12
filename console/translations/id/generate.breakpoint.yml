@@ -1,0 +1,14 @@
+description: 'Hasilkan breakpoint'
+help: 'The <info>generate:breakpoint</info> command helps you generates a new breakpoint'
+welcome: 'Selamat datang kepada penghasil breakpoint untuk Drupal'
+options:
+    theme: 'Nama tema'
+    breakpoints: breakpoint-breakpoint
+questions:
+    theme: 'Masukkan nama tema (contoh classy, stable)'
+    breakpoint-name: 'Masukkan nama breakpoint'
+    breakpoint-label: 'Masukkan label breakpoint'
+    breakpoint-media-query: 'Masukkan breakpoint media query'
+    breakpoint-weight: 'Masukkan berat breakpoint'
+    breakpoint-multipliers: 'Masukkan pengganda breakpoint'
+    breakpoint-add: 'Apakah anda ingin menambahkan breakpoint lain'

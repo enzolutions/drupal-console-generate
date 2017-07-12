@@ -1,483 +1,483 @@
 services:
   console.module_generator:
-      class: Drupal\Console\Generator\ModuleGenerator
+      class: Drupal\Console\Generate\Generator\ModuleGenerator
       tags:
         - { name: drupal.generator }
       lazy: true
   console.modulefile_generator:
-    class: Drupal\Console\Generator\ModuleFileGenerator
+    class: Drupal\Console\Generate\Generator\ModuleFileGenerator
     tags:
       - { name: drupal.generator }
     lazy: true
   console.authentication_provider_generator:
-    class: Drupal\Console\Generator\AuthenticationProviderGenerator
+    class: Drupal\Console\Generate\Generator\AuthenticationProviderGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.help_generator:
-    class: Drupal\Console\Generator\HelpGenerator
+    class: Drupal\Console\Generate\Generator\HelpGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.controller_generator:
-    class: Drupal\Console\Generator\ControllerGenerator
+    class: Drupal\Console\Generate\Generator\ControllerGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.breakpoint_generator:
-    class: Drupal\Console\Generator\BreakPointGenerator
+    class: Drupal\Console\Generate\Generator\BreakPointGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.form_alter_generator:
-    class: Drupal\Console\Generator\FormAlterGenerator
+    class: Drupal\Console\Generate\Generator\FormAlterGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.permission_generator:
-    class: Drupal\Console\Generator\PermissionGenerator
+    class: Drupal\Console\Generate\Generator\PermissionGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.event_subscriber_generator:
-    class: Drupal\Console\Generator\EventSubscriberGenerator
+    class: Drupal\Console\Generate\Generator\EventSubscriberGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.form_generator:
-    class: Drupal\Console\Generator\FormGenerator
+    class: Drupal\Console\Generate\Generator\FormGenerator
     arguments: ['@console.extension_manager', '@console.string_converter']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.profile_generator:
-    class: Drupal\Console\Generator\ProfileGenerator
+    class: Drupal\Console\Generate\Generator\ProfileGenerator
     tags:
       - { name: drupal.generator }
     lazy: true
   console.post_update_generator:
-    class: Drupal\Console\Generator\PostUpdateGenerator
+    class: Drupal\Console\Generate\Generator\PostUpdateGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_condition_generator:
-    class: Drupal\Console\Generator\PluginConditionGenerator
+    class: Drupal\Console\Generate\Generator\PluginConditionGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_field_generator:
-    class: Drupal\Console\Generator\PluginFieldFormatterGenerator
+    class: Drupal\Console\Generate\Generator\PluginFieldFormatterGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_field_formatter_generator:
-    class: Drupal\Console\Generator\PluginFieldFormatterGenerator
+    class: Drupal\Console\Generate\Generator\PluginFieldFormatterGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_field_type_generator:
-    class: Drupal\Console\Generator\PluginFieldTypeGenerator
+    class: Drupal\Console\Generate\Generator\PluginFieldTypeGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_field_widget_generator:
-    class: Drupal\Console\Generator\PluginFieldWidgetGenerator
+    class: Drupal\Console\Generate\Generator\PluginFieldWidgetGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_image_effect_generator:
-    class: Drupal\Console\Generator\PluginImageEffectGenerator
+    class: Drupal\Console\Generate\Generator\PluginImageEffectGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_image_formatter_generator:
-    class: Drupal\Console\Generator\PluginImageFormatterGenerator
+    class: Drupal\Console\Generate\Generator\PluginImageFormatterGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_mail_generator:
-    class: Drupal\Console\Generator\PluginMailGenerator
+    class: Drupal\Console\Generate\Generator\PluginMailGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_migrate_source_generator:
-    class: Drupal\Console\Generator\PluginMigrateSourceGenerator
+    class: Drupal\Console\Generate\Generator\PluginMigrateSourceGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_migrate_process_generator:
-    class: Drupal\Console\Generator\PluginMigrateProcessGenerator
+    class: Drupal\Console\Generate\Generator\PluginMigrateProcessGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_rest_resource_generator:
-    class: Drupal\Console\Generator\PluginRestResourceGenerator
+    class: Drupal\Console\Generate\Generator\PluginRestResourceGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_rules_action_generator:
-    class: Drupal\Console\Generator\PluginRulesActionGenerator
+    class: Drupal\Console\Generate\Generator\PluginRulesActionGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_skeleton_generator:
-    class: Drupal\Console\Generator\PluginSkeletonGenerator
+    class: Drupal\Console\Generate\Generator\PluginSkeletonGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_views_field_generator:
-    class: Drupal\Console\Generator\PluginViewsFieldGenerator
+    class: Drupal\Console\Generate\Generator\PluginViewsFieldGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_type_annotation_generator:
-    class: Drupal\Console\Generator\PluginTypeAnnotationGenerator
+    class: Drupal\Console\Generate\Generator\PluginTypeAnnotationGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.plugin_type_yaml_generator:
-    class: Drupal\Console\Generator\PluginTypeYamlGenerator
+    class: Drupal\Console\Generate\Generator\PluginTypeYamlGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.route_subscriber_generator:
-    class: Drupal\Console\Generator\RouteSubscriberGenerator
+    class: Drupal\Console\Generate\Generator\RouteSubscriberGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.service_generator:
-    class: Drupal\Console\Generator\ServiceGenerator
+    class: Drupal\Console\Generate\Generator\ServiceGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.theme_generator:
-    class: Drupal\Console\Generator\ThemeGenerator
+    class: Drupal\Console\Generate\Generator\ThemeGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.twig_extension_generator:
-    class: Drupal\Console\Generator\TwigExtensionGenerator
+    class: Drupal\Console\Generate\Generator\TwigExtensionGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.update_generator:
-    class: Drupal\Console\Generator\UpdateGenerator
+    class: Drupal\Console\Generate\Generator\UpdateGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.pluginblock_generator:
-    class: Drupal\Console\Generator\PluginBlockGenerator
+    class: Drupal\Console\Generate\Generator\PluginBlockGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.command_generator:
-    class: Drupal\Console\Generator\CommandGenerator
+    class: Drupal\Console\Generate\Generator\CommandGenerator
     arguments: ['@console.extension_manager', '@console.translator_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.command_ckeditorbutton:
-    class: Drupal\Console\Generator\PluginCKEditorButtonGenerator
+    class: Drupal\Console\Generate\Generator\PluginCKEditorButtonGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.entitycontent_generator:
-    class: Drupal\Console\Generator\EntityContentGenerator
+    class: Drupal\Console\Generate\Generator\EntityContentGenerator
     arguments: ['@console.extension_manager', '@console.site', '@console.renderer']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.entitybundle_generator:
-    class: Drupal\Console\Generator\EntityBundleGenerator
+    class: Drupal\Console\Generate\Generator\EntityBundleGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.entityconfig_generator:
-    class: Drupal\Console\Generator\EntityConfigGenerator
+    class: Drupal\Console\Generate\Generator\EntityConfigGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.cache_context_generator:
-    class: Drupal\Console\Generator\CacheContextGenerator
+    class: Drupal\Console\Generate\Generator\CacheContextGenerator
     arguments: ['@console.extension_manager']
     tags:
       - { name: drupal.generator }
     lazy: true
   console.generate_module:
-    class: Drupal\Console\Command\Generate\ModuleCommand
+    class: Drupal\Console\Generate\Command\ModuleCommand
     arguments: ['@console.module_generator', '@console.validator', '@app.root', '@console.string_converter', '@console.drupal_api']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_modulefile:
-    class: Drupal\Console\Command\Generate\ModuleFileCommand
+    class: Drupal\Console\Generate\Command\ModuleFileCommand
     arguments: ['@console.extension_manager', '@console.modulefile_generator']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_authentication_provider:
-    class: Drupal\Console\Generate\Command\Generate\AuthenticationProviderCommand
+    class: Drupal\Console\Generate\Command\AuthenticationProviderCommand
     arguments: ['@console.extension_manager', '@console.authentication_provider_generator', '@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_controller:
-    class: Drupal\Console\Command\Generate\ControllerCommand
+    class: Drupal\Console\Generate\Command\ControllerCommand
     arguments: ['@console.extension_manager', '@console.controller_generator', '@console.string_converter', '@console.validator', '@router.route_provider', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_breakpoint:
-    class: Drupal\Console\Command\Generate\BreakPointCommand
+    class: Drupal\Console\Generate\Command\BreakPointCommand
     arguments: ['@console.breakpoint_generator', '@app.root', '@theme_handler', '@console.validator', '@console.string_converter']
     tags:
       - { name: drupal.command }
     lazy: true
   console.generate_help:
-    class: Drupal\Console\Command\Generate\HelpCommand
+    class: Drupal\Console\Generate\Command\HelpCommand
     arguments: ['@console.help_generator', '@console.site', '@console.extension_manager', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_form:
-    class: Drupal\Console\Command\Generate\FormBaseCommand
+    class: Drupal\Console\Generate\Command\FormBaseCommand
     arguments: ['@console.extension_manager', '@console.form_generator', '@console.chain_queue', '@console.string_converter', '@plugin.manager.element_info', '@router.route_provider']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_form_alter:
-    class: Drupal\Console\Command\Generate\FormAlterCommand
+    class: Drupal\Console\Generate\Command\FormAlterCommand
     arguments: ['@console.extension_manager', '@console.form_alter_generator', '@console.string_converter', '@module_handler', '@plugin.manager.element_info', '@?profiler', '@app.root', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_permissions:
-    class: Drupal\Console\Command\Generate\PermissionCommand
+    class: Drupal\Console\Generate\Command\PermissionCommand
     arguments: ['@console.extension_manager', '@console.string_converter', '@console.permission_generator']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_event_subscriber:
-    class: Drupal\Console\Command\Generate\EventSubscriberCommand
+    class: Drupal\Console\Generate\Command\EventSubscriberCommand
     arguments: ['@console.extension_manager', '@console.event_subscriber_generator', '@console.string_converter', '@event_dispatcher', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_form_config:
-    class: Drupal\Console\Command\Generate\ConfigFormBaseCommand
+    class: Drupal\Console\Generate\Command\ConfigFormBaseCommand
     arguments: ['@console.extension_manager', '@console.form_generator', '@console.string_converter', '@router.route_provider', '@plugin.manager.element_info', '@app.root', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_type_annotation:
-    class: Drupal\Console\Command\Generate\PluginTypeAnnotationCommand
+    class: Drupal\Console\Generate\Command\PluginTypeAnnotationCommand
     arguments: ['@console.extension_manager', '@console.plugin_type_annotation_generator', '@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_condition:
-    class: Drupal\Console\Command\Generate\PluginConditionCommand
+    class: Drupal\Console\Generate\Command\PluginConditionCommand
     arguments: ['@console.extension_manager', '@console.plugin_condition_generator', '@console.chain_queue', '@entity_type.repository', '@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_field:
-    class: Drupal\Console\Command\Generate\PluginFieldCommand
+    class: Drupal\Console\Generate\Command\PluginFieldCommand
     arguments: ['@console.extension_manager','@console.string_converter', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_field_formatter:
-    class: Drupal\Console\Command\Generate\PluginFieldFormatterCommand
+    class: Drupal\Console\Generate\Command\PluginFieldFormatterCommand
     arguments: ['@console.extension_manager', '@console.plugin_field_formatter_generator','@console.string_converter', '@plugin.manager.field.field_type', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_field_type:
-    class: Drupal\Console\Command\Generate\PluginFieldTypeCommand
+    class: Drupal\Console\Generate\Command\PluginFieldTypeCommand
     arguments: ['@console.extension_manager', '@console.plugin_field_type_generator','@console.string_converter', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_field_widget:
-    class: Drupal\Console\Command\Generate\PluginFieldWidgetCommand
+    class: Drupal\Console\Generate\Command\PluginFieldWidgetCommand
     arguments: ['@console.extension_manager', '@console.plugin_field_widget_generator','@console.string_converter', '@plugin.manager.field.field_type', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_image_effect:
-    class: Drupal\Console\Command\Generate\PluginImageEffectCommand
+    class: Drupal\Console\Generate\Command\PluginImageEffectCommand
     arguments: ['@console.extension_manager', '@console.plugin_image_effect_generator','@console.string_converter', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_image_formatter:
-    class: Drupal\Console\Command\Generate\PluginImageFormatterCommand
+    class: Drupal\Console\Generate\Command\PluginImageFormatterCommand
     arguments: ['@console.extension_manager', '@console.plugin_image_formatter_generator','@console.string_converter', '@console.validator', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_mail:
-    class: Drupal\Console\Command\Generate\PluginMailCommand
+    class: Drupal\Console\Generate\Command\PluginMailCommand
     arguments: ['@console.extension_manager', '@console.plugin_mail_generator','@console.string_converter', '@console.validator', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_migrate_source:
-    class: Drupal\Console\Command\Generate\PluginMigrateSourceCommand
+    class: Drupal\Console\Generate\Command\PluginMigrateSourceCommand
     arguments: ['@config.factory', '@console.chain_queue', '@console.plugin_migrate_source_generator', '@entity_type.manager', '@console.extension_manager', '@console.validator', '@console.string_converter', '@plugin.manager.element_info']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_migrate_process:
-    class: Drupal\Console\Command\Generate\PluginMigrateProcessCommand
+    class: Drupal\Console\Generate\Command\PluginMigrateProcessCommand
     arguments: [ '@console.plugin_migrate_process_generator', '@console.chain_queue', '@console.extension_manager', '@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_rest_resource:
-    class: Drupal\Console\Command\Generate\PluginRestResourceCommand
+    class: Drupal\Console\Generate\Command\PluginRestResourceCommand
     arguments: ['@console.extension_manager', '@console.plugin_rest_resource_generator','@console.string_converter', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_rules_action:
-    class: Drupal\Console\Command\Generate\PluginRulesActionCommand
+    class: Drupal\Console\Generate\Command\PluginRulesActionCommand
     arguments: ['@console.extension_manager', '@console.plugin_rules_action_generator','@console.string_converter', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_skeleton:
-    class: Drupal\Console\Command\Generate\PluginSkeletonCommand
+    class: Drupal\Console\Generate\Command\PluginSkeletonCommand
     arguments: ['@console.extension_manager', '@console.plugin_skeleton_generator','@console.string_converter', '@console.validator', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_type_yaml:
-    class: Drupal\Console\Command\Generate\PluginTypeYamlCommand
+    class: Drupal\Console\Generate\Command\PluginTypeYamlCommand
     arguments: ['@console.extension_manager', '@console.plugin_type_yaml_generator','@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_plugin_views_field:
-    class: Drupal\Console\Command\Generate\PluginViewsFieldCommand
+    class: Drupal\Console\Generate\Command\PluginViewsFieldCommand
     arguments: ['@console.extension_manager', '@console.plugin_views_field_generator', '@console.site','@console.string_converter','@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_post_update:
-    class: Drupal\Console\Command\Generate\PostUpdateCommand
+    class: Drupal\Console\Generate\Command\PostUpdateCommand
     arguments: ['@console.extension_manager', '@console.post_update_generator', '@console.site', '@console.validator','@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_profile:
-    class: Drupal\Console\Command\Generate\ProfileCommand
+    class: Drupal\Console\Generate\Command\ProfileCommand
     arguments: ['@console.extension_manager', '@console.profile_generator', '@console.string_converter', '@console.validator', '@app.root']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_route_subscriber:
-    class: Drupal\Console\Command\Generate\RouteSubscriberCommand
+    class: Drupal\Console\Generate\Command\RouteSubscriberCommand
     arguments: ['@console.extension_manager', '@console.route_subscriber_generator', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_service:
-    class: Drupal\Console\Command\Generate\ServiceCommand
+    class: Drupal\Console\Generate\Command\ServiceCommand
     arguments: ['@console.extension_manager', '@console.service_generator', '@console.string_converter', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_theme:
-    class: Drupal\Console\Command\Generate\ThemeCommand
+    class: Drupal\Console\Generate\Command\ThemeCommand
     arguments: ['@console.extension_manager', '@console.theme_generator', '@console.validator', '@app.root', '@theme_handler', '@console.site', '@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_twig_extension:
-    class: Drupal\Console\Command\Generate\TwigExtensionCommand
+    class: Drupal\Console\Generate\Command\TwigExtensionCommand
     arguments: ['@console.extension_manager', '@console.twig_extension_generator', '@console.site', '@console.string_converter', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_update:
-    class: Drupal\Console\Command\Generate\UpdateCommand
+    class: Drupal\Console\Generate\Command\UpdateCommand
     arguments: ['@console.extension_manager', '@console.update_generator', '@console.site', '@console.chain_queue']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_pluginblock:
-    class: Drupal\Console\Command\Generate\PluginBlockCommand
+    class: Drupal\Console\Generate\Command\PluginBlockCommand
     arguments: ['@config.factory', '@console.chain_queue', '@console.pluginblock_generator', '@entity_type.manager', '@console.extension_manager', '@console.validator', '@console.string_converter', '@plugin.manager.element_info']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_command:
-    class: Drupal\Console\Command\Generate\CommandCommand
+    class: Drupal\Console\Generate\Command\CommandCommand
     arguments: ['@console.command_generator', '@console.extension_manager', '@console.validator', '@console.string_converter', '@console.site']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_ckeditorbutton:
-    class: Drupal\Console\Command\Generate\PluginCKEditorButtonCommand
+    class: Drupal\Console\Generate\Command\PluginCKEditorButtonCommand
     arguments: ['@console.chain_queue', '@console.command_ckeditorbutton', '@console.extension_manager', '@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_entitycontent:
-    class: Drupal\Console\Command\Generate\EntityContentCommand
+    class: Drupal\Console\Generate\Command\EntityContentCommand
     arguments: ['@console.chain_queue', '@console.entitycontent_generator', '@console.string_converter', '@console.extension_manager', '@console.validator']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_entitybundle:
-    class: Drupal\Console\Command\Generate\EntityBundleCommand
+    class: Drupal\Console\Generate\Command\EntityBundleCommand
     arguments: ['@console.validator', '@console.entitybundle_generator', '@console.extension_manager']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_entityconfig:
-    class: Drupal\Console\Command\Generate\EntityConfigCommand
+    class: Drupal\Console\Generate\Command\EntityConfigCommand
     arguments: ['@console.extension_manager', '@console.entityconfig_generator', '@console.validator', '@console.string_converter']
     tags:
        - { name: drupal.command }
     lazy: true
   console.generate_cache_context:
-    class: Drupal\Console\Command\Generate\CacheContextCommand
+    class: Drupal\Console\Generate\Command\CacheContextCommand
     arguments: [ '@console.cache_context_generator', '@console.chain_queue', '@console.extension_manager', '@console.string_converter']
     tags:
        - { name: drupal.command }

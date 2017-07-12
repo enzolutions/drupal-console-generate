@@ -1,0 +1,6 @@
+description: 'Hasilkan penyedia otentikasi'
+help: 'Perintah <info>generate:authentication:provider</info> membantu anda menghasilkan penyedia otentikasi.'
+options:
+    class: 'Kelas Penyedia Otentikasi'
+    provider-id: 'ID Penyedia'
+module: common.options.module

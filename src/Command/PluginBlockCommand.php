@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PluginBlockCommand.
+ * Contains \Drupal\Console\Generate\Command\PluginBlockCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
-use Drupal\Console\Generator\PluginBlockGenerator;
+use Drupal\Console\Generate\Generator\PluginBlockGenerator;
 use Drupal\Console\Command\Shared\ServicesTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\FormTrait;
@@ -25,6 +25,16 @@ use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Core\Config\ConfigFactory;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Render\ElementInfoManagerInterface;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class PluginBlockCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class PluginBlockCommand extends Command
 {

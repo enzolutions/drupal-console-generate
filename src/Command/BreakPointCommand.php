@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\BreakPointCommand.
+ * Contains \Drupal\Console\Generate\Command\BreakPointCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -19,11 +19,18 @@ use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Core\Style\DrupalStyle;
 use Drupal\Console\Utils\Validator;
 use Drupal\Console\Core\Utils\StringConverter;
-use Drupal\Console\Generator\BreakPointGenerator;
+use Drupal\Console\Generate\Generator\BreakPointGenerator;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
+ * Class BreakPointCommand.
  *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class BreakPointCommand extends Command
 {
     use CommandTrait;

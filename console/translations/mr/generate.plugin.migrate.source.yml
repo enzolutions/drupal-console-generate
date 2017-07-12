@@ -1,0 +1,21 @@
+description: 'माइग्रेट स्रोत प्लगइन उत्पन्न करा.'
+help: '<info>generate:migrate:plugin:source</info> आज्ञा आपल्याला नवीन स्थलांतरित स्रोत प्लगइन उत्पन्न करण्यात मदत करते.'
+welcome: 'Drupal Migrate सोर्स प्लगइन जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    class: 'प्लगइन वर्ग नाव.'
+    plugin-id: 'प्लगिन आयडी'
+    table: 'क्वेरीसाठी टेबल.'
+    alias: 'सारणीचा सारांश म्हणून लघु उपनाव.'
+    group-by: 'फील्ड द्वारे गट परिणाम.'
+    fields: 'निर्यात करण्यासाठी फील्ड.'
+questions:
+    module: common.questions.module
+    class: 'प्लगइन वर्ग नाव प्रविष्ट करा.'
+    plugin-id: 'प्लगइन आयडी प्रविष्ट करा.'
+    table: 'सारणीचे नाव प्रविष्ट करा.'
+    alias: 'सारणीसाठी उपनाव प्रविष्ट करा.'
+    group-by: 'इच्छित असल्यास गटबद्ध फिल्डमध्ये प्रवेश करा.'
+    fields:
+      id: 'फील्ड आयडी प्रविष्ट करा किंवा <info>enter</info> केले असल्यास'
+      description: 'फील्ड वर्णन प्रविष्ट करा.'

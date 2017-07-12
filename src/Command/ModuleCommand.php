@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\ModuleCommand.
+ * Contains \Drupal\Console\Generate\Command\ModuleCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\ModuleGenerator;
+use Drupal\Console\Generate\Generator\ModuleGenerator;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -19,6 +19,16 @@ use Drupal\Console\Utils\Validator;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Utils\DrupalApi;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class ModuleCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class ModuleCommand extends Command
 {

@@ -1,0 +1,21 @@
+description: 'प्लगिन स्थिती उत्पन्न करा.'
+help: '<info>generate:plugin:conditon</info> कमांड आपल्याला प्लगिन स्थिती उत्पन्न करण्यात मदत करते.'
+welcome: 'Drupal प्लगइन स्थिती जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    class: 'प्लगिन स्थिती वर्ग नाव.'
+    label: 'प्लगिन स्थिती लेबल.'
+    plugin-id: 'प्लगिन स्थिती आयडी.'
+    context-definition-id: 'संदर्भ व्याख्या आयडी.'
+    context-definition-label: 'संदर्भ व्याख्या लेबल.'
+    context-definition-required: 'संदर्भ व्याख्या आवश्यक आहे (सत्य / चूक)'
+questions:
+    module: common.questions.module
+    class: 'प्लगिन स्थिती वर्ग नाव प्रविष्ट करा.'
+    label: 'प्लगिन स्थिती लेबल प्रविष्ट करा.'
+    plugin-id: 'प्लगिन स्थिती आयडी प्रविष्ट करा.'
+    context-type: 'संदर्भ प्रकार'
+    context-entity-type: 'संदर्भ अस्तित्व प्रकार.'
+    context-definition-id: 'संदर्भ व्याख्या आयडी.'
+    context-definition-label: 'संदर्भ व्याख्या लेबल.'
+    context-definition-required: 'संदर्भ व्याख्या आवश्यक आहे.'

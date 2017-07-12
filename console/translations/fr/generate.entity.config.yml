@@ -1,0 +1,16 @@
+description: 'Génère une nouvelle entité de configuration'
+help: ''
+options:
+    module: common.options.module
+    entity-class: 'La classe de l''entité de configuration'
+    entity-name: 'Le nom de l''entité de configuration'
+    label: 'Le label'
+    bundle-of: 'Intervient en tant que bundle d''entités de contenu'
+    base-path: 'Le chemin de base des routes de l''entité de configuration'
+questions:
+    module: common.questions.module
+    entity-class: 'Entrez la classe de votre nouvelle entité de configuration'
+    entity-name: 'Entrez le nom de votre nouvelle entité de configuration'
+    label: 'Entrez le label de votre nouvelle entité de configuration'
+    bundle-of: 'Nom de l''entité de contenu pour laquelle vous voulez que cette entité (de configuration) intervienne en tant que bundle'
+    base-path: 'Entrez le chemin de base des routes de l''entité de configuration'

@@ -1,0 +1,13 @@
+description: 'Génère une implémentation d''un squelette de plugin pour les plugins Drupal Console qui n''ont pas de générateur spécifique'
+help: 'La commande <info>"%s"</info> vous permet de générer un squelette de plugin "%s"'
+options:
+    module: common.options.module
+    plugin: 'L''Id du plugin.'
+    class: 'Le nom de la classe du plugin'
+questions:
+    module: common.questions.module
+    plugin: 'Entrez l''Id du plugin'
+    class: 'Entrez le nom de la classe du plugin'
+messages:
+    plugin-dont-exist: 'Le plugin "%s" n''existe pas'
+    plugin-generator-implemented: 'Le plugin "%s" a déjà un générateur avancé en lignes de commande, merci d''utiliser "%s"'

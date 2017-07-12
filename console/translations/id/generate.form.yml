@@ -1,0 +1,29 @@
+description: 'Hasilkan "%s baru"'
+help: 'Perintah <info>"%s"</info> membantu anda menghasilkan "%s" baru'
+welcome: 'Selamat datang ke penghasil formulir Drupal'
+options:
+    module: common.options.module
+    class: 'Nama kelas formulir'
+    form-id: 'ID formulir'
+    services: common.options.services
+    config-file: 'Add a config file'
+    inputs: common.options.inputs
+    path: 'Masukkan path untuk formulir'
+    menu-link-gen: 'Generate a menu link'
+    menu-link-title: 'A title for the menu link'
+    menu-parent: 'Menu parent'
+    menu-link-desc: 'A description for the menu link'
+    routing: 'Hasilkan routing'
+questions:
+    module: common.questions.module
+    class: 'Masukkan nama kelas formulir'
+    form-id: 'Masukkan ID formulir'
+    services: common.questions.services
+    config-file: 'Do you want to generate a config file'
+    inputs: common.questions.inputs
+    routing: 'Apakah anda ingin mendaftarkan rute untuk formulir ini'
+    path: 'Masukkan path dari route'
+    menu_link_gen: 'Hasilkan tautan menu'
+    menu_link_title: 'Judul untuk tautan menu'
+    menu_parent: 'Induk menu'
+    menu_link_desc: 'Deskripsi untuk tautan menu'

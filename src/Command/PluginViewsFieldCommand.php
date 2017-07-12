@@ -2,15 +2,15 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PluginViewsFieldCommand.
+ * Contains \Drupal\Console\Generate\Command\PluginViewsFieldCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\PluginViewsFieldGenerator;
+use Drupal\Console\Generate\Generator\PluginViewsFieldGenerator;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
@@ -20,12 +20,17 @@ use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Utils\Site;
 use Drupal\Console\Core\Utils\StringConverter;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class PluginViewsFieldCommand
+ * Class PluginViewsFieldCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class PluginViewsFieldCommand extends Command
 {
     use ModuleTrait;

@@ -1,0 +1,19 @@
+description: 'Génère un plugin de ressource rest'
+help: 'La commande <info>generate:plugin:rest:resource</info> vous permet de générer une nouvelle ressource rest.'
+welcome: 'Bienvenue sur le générateur de ressource rest de Drupal'
+options:
+    module: common.options.module
+    class: 'Classe du plugin de ressource rest'
+    plugin-id: 'Id du plugin de la ressource rest'
+    plugin-label: 'Label du plugin de la ressource rest'
+    plugin-url: 'URL du plugin de la ressource rest'
+    plugin-states: 'Etats (States) du plugin de la ressource rest'
+questions:
+    module: common.questions.module
+    class: 'Entrez le nom du plugin de la ressource rest'
+    plugin-id: 'Entrez l''Id du plugin de la ressource rest'
+    plugin-label: 'Entrez le label du plugin de la ressource rest'
+    plugin-url: 'Entrez l''URL du plugin de la ressource rest'
+    plugin-states: 'Merci de sélectionner les états (states) implémentés par votre ressource (GET est sélectionné par défaut)'
+messages:
+    selected-states: 'Etats (States) sélectionnés'

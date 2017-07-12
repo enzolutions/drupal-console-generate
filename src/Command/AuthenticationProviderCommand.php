@@ -21,6 +21,7 @@ use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Annotations\DrupalCommand;
+
 /**
  * Class AuthenticationProviderCommand.
  *

@@ -1,0 +1,7 @@
+description: '.module फाइल उत्पन्न करा'
+help: '<info>generate:module:file</info> आज्ञा आपल्याला नवीन .module फाइल बनविण्यास मदत करते.'
+welcome: 'Drupal मॉड्यूल जनरेटर आपले स्वागत आहे.'
+options:
+    module: 'मॉड्यूल नाव.'
+questions:
+    module: 'नवीन मॉड्यूल नाव प्रविष्ट करा.'

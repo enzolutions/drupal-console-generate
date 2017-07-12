@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\TwigExtensionCommand.
+ * Contains \Drupal\Console\Generate\Command\TwigExtensionCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\ServicesTrait;
-use Drupal\Console\Generator\TwigExtensionGenerator;
+use Drupal\Console\Generate\Generator\TwigExtensionGenerator;
 use Drupal\Console\Core\Style\DrupalStyle;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -20,12 +20,17 @@ use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Utils\Site;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Core\Command\Shared\ContainerAwareCommandTrait;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class TwigExtensionCommand
+ * Class ThemeCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class TwigExtensionCommand extends Command
 {
     use ModuleTrait;

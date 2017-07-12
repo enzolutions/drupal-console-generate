@@ -1,0 +1,7 @@
+description: 'एक ट्विंग विस्तार उत्पन्न करा.'
+help: '<info>generate:twig:extension</info> कमांड आपल्याला ट्ववीग विस्तार उत्पन्न करण्यास मदत करते.'
+welcome: 'Drupal Twig विस्तार जनरेटर आपले स्वागत आहे.'
+options:
+    name: 'विस्तारीत विस्तार नाव.'
+questions:
+    twig-extension: 'Twig विस्तार नाव प्रविष्ट करा.'

@@ -1,0 +1,19 @@
+description: 'फील्ड प्रकार प्लगिन उत्पन्न करा.'
+help: '<info>generate:plugin:fieldtype</info> कमांड आपल्याला नवीन फील्ड टाईप प्लगइन निर्माण करण्यास मदत करते.'
+welcome: 'Drupal फील्ड प्रकार प्लगइन जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    class: 'प्लगइन वर्ग नाव.'
+    label: 'प्लगइन लेबल.'
+    plugin-id: 'प्लगिन आयडी.'
+    description: 'प्लगइन वर्णन.'
+    default-widget: 'या प्लगइनचे डीफॉल्ट फील्ड विजेट.'
+    default-formatter: 'या प्लगइनची डीफॉल्ट फिल्ड फॉर्मेटर.'
+questions:
+    module: common.questions.module
+    class: 'प्लगइन वर्ग नाव प्रविष्ट करा.'
+    label: 'प्लगइन लेबल प्रविष्ट करा.'
+    plugin-id: 'प्लगइन आयडी प्रविष्ट करा.'
+    description: 'प्लगइन वर्णन प्रविष्ट करा.'
+    default-widget: 'या प्लगइनचे डीफॉल्ट फिल्ड विजेट प्रविष्ट करा.'
+    default-formatter: 'या प्लगइनचे डीफॉल्ट फील्ड फॉर्मेटर प्रविष्ट करा.'

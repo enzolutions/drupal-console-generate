@@ -2,17 +2,27 @@
 
 /**
  * @file
- * Contains Drupal\Console\Command\Generate\ConfigFormBaseCommand.
+ * Contains Drupal\Console\Generate\Command\ConfigFormBaseCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
-use Drupal\Console\Generator\FormGenerator;
+use Drupal\Console\Generate\Generator\FormGenerator;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Core\Routing\RouteProviderInterface;
 use Drupal\Core\Render\ElementInfoManager;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class ConfigFormBaseCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class ConfigFormBaseCommand extends FormCommand
 {

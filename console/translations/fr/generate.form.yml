@@ -1,0 +1,29 @@
+description: 'Génère un nouveau "%s"'
+help: 'la commande <info>"%s"</info> vous assiste dans la génération d''un nouveau "%s"'
+welcome: 'Bienvenue sur le générateur de formulaire Drupal'
+options:
+    module: common.options.module
+    class: 'Le nom de classe du formulaire'
+    form-id: 'l''ID du formulaire'
+    services: common.options.services
+    config-file: 'Add a config file'
+    inputs: common.options.inputs
+    path: 'Entrez le chemin du formulaire'
+    menu-link-gen: 'Generate a menu link'
+    menu-link-title: 'A title for the menu link'
+    menu-parent: 'Menu parent'
+    menu-link-desc: 'A description for the menu link'
+    routing: 'Générer le routage'
+questions:
+    module: common.questions.module
+    class: 'Entrez le nom de la classe du formulaire'
+    form-id: 'Entrez l''id du formulaire'
+    services: common.questions.services
+    config-file: 'Do you want to generate a config file'
+    inputs: common.questions.inputs
+    routing: 'Voulez-vous enregistrer une route pour ce formulaire'
+    path: 'Entrez le chemin de la route'
+    menu_link_gen: 'Générer un lien de menu'
+    menu_link_title: 'Un titre pour le lien de menu'
+    menu_parent: 'Menu parent'
+    menu_link_desc: 'Une description du lien de menu'

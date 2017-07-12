@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PluginSkeletonCommand.
+ * Contains \Drupal\Console\Generate\Command\PluginSkeletonCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
-use Drupal\Console\Generator\PluginSkeletonGenerator;
+use Drupal\Console\Generate\Generator\PluginSkeletonGenerator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -21,12 +21,17 @@ use Drupal\Console\Core\Command\Shared\ContainerAwareCommandTrait;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Utils\Validator;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class PluginSkeletonCommand
+ * Class PluginSkeletonCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class PluginSkeletonCommand extends Command
 {
     use ModuleTrait;

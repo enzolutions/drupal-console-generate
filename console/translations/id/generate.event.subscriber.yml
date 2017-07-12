@@ -1,0 +1,4 @@
+description: 'Hasilkan langganan event'
+questions:
+    class: 'Nama kelas'
+    callback-name: 'Nama fungsi callback untuk menangani event'

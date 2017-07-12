@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Generator\TwigExtensionGenerator.
+ * Contains \Drupal\Console\Generate\Generator\TwigExtensionGenerator.
  */
 
-namespace Drupal\Console\Generator;
+namespace Drupal\Console\Generate\Generator;
 
 use Drupal\Console\Core\Generator\Generator;
 use Drupal\Console\Extension\Manager;

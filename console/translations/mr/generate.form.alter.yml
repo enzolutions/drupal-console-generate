@@ -1,0 +1,9 @@
+description: 'Hook_form_alter() किंवा hook_form_FORM_ID_alter चा अंमलबजावणी उत्पन्न करा.'
+help: '<info>"%s"</info> आज्ञा आपल्याला नवीन "%s" उत्पन्न करण्यास मदत करते.'
+options:
+    form-id: 'बदलण्यासाठी फॉर्म आयडी.'
+messages:
+    inputs: "फॉर्म सुधारण्यासाठी आपण फॉर्म फील्ड जोडू शकता. \n हे वैकल्पिक आहे, <info>enter</info> ला <info>continue</info>"
+    loading-forms: 'वेबप्रॉफेलर मॉड्यूलवरून फॉर्म व्याख्या लोड करीत आहे.'
+    hide-form-elements: 'वैकल्पिकरित्या आपण लपविण्यासाठी फॉर्म आयटम निवडू शकता.'
+    help-already-implemented: 'हुक फॉर्म बदल मॉड्यूल "%s" मध्ये आधीच लागू केले आहे.'

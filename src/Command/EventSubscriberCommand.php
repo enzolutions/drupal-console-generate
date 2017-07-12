@@ -2,17 +2,17 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\EventSubscriberCommand.
+ * Contains \Drupal\Console\Generate\Command\EventSubscriberCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Drupal\Console\Command\Shared\ServicesTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
-use Drupal\Console\Generator\EventSubscriberGenerator;
+use Drupal\Console\Generate\Generator\EventSubscriberGenerator;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Drupal\Console\Command\Shared\EventsTrait;
 use Symfony\Component\Console\Command\Command;
@@ -22,6 +22,16 @@ use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Extension\Manager;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Drupal\Console\Core\Utils\ChainQueue;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class EventSubscriberCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class EventSubscriberCommand extends Command
 {

@@ -1,0 +1,22 @@
+description: 'प्लगिन नियम क्रिया उत्पन्न करा.'
+help: '<info>generate:plugin:rulesaction</info> आज्ञा आपल्याला नवीन प्लगिन नियम क्रिया उत्पन्न करण्यास मदत करते.'
+welcome: 'Drupal प्लगइन नियम ऍक्शन जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    class: 'प्लगइन वर्ग नाव.'
+    label: 'प्लगइन लेबल.'
+    plugin-id: 'प्लगइन आयडी'
+    inputs: common.options.inputs
+    services: common.options.services
+    category: 'प्लगइन श्रेणी'
+    context: 'प्लगइन संदर्भ'
+    type: 'क्रिया प्रकार (वापरकर्ता किंवा नोड)'
+questions:
+    module: common.questions.module
+    class: 'प्लगइन वर्ग नाव प्रविष्ट करा.'
+    label: 'प्लगइन लेबल प्रविष्ट करा.'
+    plugin-id: 'प्लगइन आयडी प्रविष्ट करा.'
+    inputs: common.questions.inputs
+    services: common.questions.services
+    category: 'प्लगइन श्रेणी प्रविष्ट करा.'
+    context: 'प्लगइन संदर्भ प्रविष्ट करा.'

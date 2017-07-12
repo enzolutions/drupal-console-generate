@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PluginTypeYamlCommand.
+ * Contains \Drupal\Console\Generate\Command\PluginTypeYamlCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
-use Drupal\Console\Generator\PluginTypeYamlGenerator;
+use Drupal\Console\Generate\Generator\PluginTypeYamlGenerator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -21,12 +21,17 @@ use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Core\Utils\ChainQueue;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class PluginTypeYamlCommand
+ * Class PluginTypeYamlCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class PluginTypeYamlCommand extends Command
 {
     use ServicesTrait;

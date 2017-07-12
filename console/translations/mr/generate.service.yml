@@ -1,0 +1,20 @@
+description: 'सेवा उत्पन्न करा'
+help: '<info>generate:service</info> कमांड आपल्याला एक नवीन सेवा उत्पन्न करण्यास मदत करते.'
+welcome: 'Drupal सेवा जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    service-name: 'सेवेचे नाव'
+    class: 'वर्ग नाव'
+    interface: इंटरफेस
+    services: common.questions.services
+    path: मार्ग
+questions:
+    module: common.questions.module
+    service-name: 'सेवा नाव प्रविष्ट करा.'
+    class: 'श्रेणी नाव प्रविष्ट करा.'
+    interface: 'इंटरफेस तयार करा.'
+    interface-name: 'इंटरफेस नाव प्रविष्ट करा.'
+    services: common.options.services
+    path: 'सेवांसाठी मार्ग प्रविष्ट करा.'
+messages:
+    service-already-taken: 'मॉड्यूल "%s" मध्ये सेवा नाव आधीच घेतले गेले आहे'

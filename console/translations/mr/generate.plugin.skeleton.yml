@@ -1,0 +1,13 @@
+description: 'त्या प्लगिनसाठी स्केप्लेट प्लगइनची अंमलबजावणी उत्पन्न करा Drupal Console मध्ये विशिष्ट जनरेटर नाही.'
+help: '<info>"%s"</info> आज्ञा तुम्हाला स्केलेटन प्लगइन "%s" उत्पन्न करण्यास मदत करते.'
+options:
+    module: common.options.module
+    plugin: 'प्लगइन आयडी.'
+    class: 'प्लगइन वर्ग नाव.'
+questions:
+    module: common.questions.module
+    plugin: 'प्लगइन आयडी प्रविष्ट करा.'
+    class: 'प्लगइन वर्ग नाव प्रविष्ट करा.'
+messages:
+    plugin-dont-exist: 'प्लगइन "%s" अस्तित्वात नाही.'
+    plugin-generator-implemented: 'प्लगइन "%s" कडे आधीच प्रगत कमांड जनरेटर आहे, कृपया "%s" वापरा'

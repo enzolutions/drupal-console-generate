@@ -1,0 +1,15 @@
+description: 'Hasilkan plugin untuk pemformat field.'
+help: 'Perintah <info>generate:plugin:fieldformatter</info> membantu anda menghasilkan plugin baru untuk pemformat field.'
+welcome: 'Selamat datang di penghasil plugin untuk pemformat field'
+options:
+    module: common.options.module
+    class: 'Nama kelas plugin'
+    label: 'Label plugin'
+    plugin-id: 'ID plugin'
+    field-type: 'Tipe field yang dapat digunakan oleh plugin'
+questions:
+    module: common.questions.module
+    class: 'Masukkan nama kelas plugin'
+    label: 'Masukkan label plugin'
+    plugin-id: 'Masukkan ID plugin'
+    field-type: 'Masukkan tipe field yang dapat digunakan dengan plugin'

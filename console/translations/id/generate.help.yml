@@ -1,0 +1,6 @@
+description: 'Hasilkan implementasi dari hook_help()'
+help: 'Perintah <info>"%s"</info> membantu anda untuk menghasilkan sebuah hook_help "%s"'
+options: null
+questions: null
+messages:
+    help-already-implemented: 'hook_help telah diimplementasikan pada modul "%s"'

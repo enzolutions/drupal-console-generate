@@ -1,0 +1,21 @@
+description: 'Génère un profil.'
+help: 'La commande <info>generate:profile</info> permet de générer un nouveau profil d''installation.'
+welcome: 'Bienvenue sur le générateur de profil d''installation de Drupal'
+options:
+    profile: 'Le nom du profil'
+    machine-name: 'Le nom machine (uniquement minuscules ou underscore)'
+    description: 'Description du profil'
+    core: 'Version du core'
+    dependencies: 'Dépendances du module séparées par des virgules (i.e. context, panels)'
+    distribution: 'Le nom de la distribution'
+questions:
+    profile: 'Entrez le nom du nouveau profil'
+    machine-name: 'Entrez le ne nom machine'
+    description: 'Entrez la description'
+    core: 'Entrez la version du core de Drupal'
+    dependencies: 'Voulez-vous ajouter des dépendances de modules'
+    distribution: 'Ce profil d''installation est-il destiné à être une distribution'
+warnings:
+    module-unavailable: 'Attention les modules suivants ne sont pas encore disponibles dans votre environnement local "%s"'
+errors:
+    directory-exists: 'Le dossier cible "%s" n''est pas vide.'

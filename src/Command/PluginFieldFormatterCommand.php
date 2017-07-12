@@ -2,15 +2,15 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PluginFieldFormatterCommand.
+ * Contains \Drupal\Console\Generate\Command\PluginFieldFormatterCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\PluginFieldFormatterGenerator;
+use Drupal\Console\Generate\Generator\PluginFieldFormatterGenerator;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
@@ -20,12 +20,17 @@ use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Core\Utils\ChainQueue;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class PluginFieldFormatterCommand
+ * Class PluginFieldFormatterCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class PluginFieldFormatterCommand extends Command
 {
     use ModuleTrait;

@@ -1,0 +1,11 @@
+description: 'मॉड्यूल परवानग्या उत्पन्न करा.'
+help: '<info>generate:permissions</info> कमांड आपल्याला नवीन परवानग्या निर्माण करण्यास मदत करते.'
+options:
+    module: common.options.module
+questions:
+    module: common.questions.module
+    permission: 'एक परवानगी प्रविष्ट करा.'
+    title: 'परवानगीसाठी एक शीर्षक प्रविष्ट करा.'
+    description: 'परवानगीसाठी वर्णन प्रविष्ट करा.'
+    restrict-access: 'प्रवेश प्रतिबंधित करा.'
+    add: 'आपण दुसरी परवानगी जोडू इच्छिता.'

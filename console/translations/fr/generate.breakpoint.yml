@@ -1,0 +1,14 @@
+description: 'Générer un breakpoint'
+help: 'La commande <info>generate:theme</info> permet de générer un nouveau breakpoint'
+welcome: 'Bienvenue sur le générateur de breakpoints de Drupal'
+options:
+    theme: 'Nom du thème'
+    breakpoints: Breakpoints
+questions:
+    theme: 'Entrez le nom du thème (i.e. classy, stable)'
+    breakpoint-name: 'Entrez le nom du breakpoint'
+    breakpoint-label: 'Entrez le label du breakpoint'
+    breakpoint-media-query: 'Entrez la media query du breakpoint'
+    breakpoint-weight: 'Entrez le poids du breakpoint'
+    breakpoint-multipliers: 'Entrez les multiplicateurs de breakpoint'
+    breakpoint-add: 'Voulez-vous ajouter un autre breakpoint'

@@ -1,0 +1,17 @@
+description: 'CKEditor बटण प्लगइन उत्पन्न करा.'
+help: '<info>generate:plugin:ckeditorbutton</info> आज्ञा आपल्याला नवीन CKEditor बटण प्लगइन निर्माण करण्यास मदत करते.'
+welcome: 'Drupal CKEditor बटण प्लगइन जनरेटर आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    class: 'प्लगइन वर्ग नाव'
+    label: 'प्लगइन लेबल'
+    plugin-id: 'प्लगिन आयडी. टीप: हा CKEditor प्लगइन नावाशी संबंधित आहे. Plugin.js फाइलमध्ये CKEDITOR.plugins.add() फंक्शनलचा पहिला तर्क आहे.'
+    button-name: 'बटण नाव सुचना: हे CKEditor बटनचे नाव आहे. ते plugin.ui.addButton() किंवा editor.ui.addRichCombo() फंक्शन्स प्लगइन.जेएस फाईलमधील पहिले तर्क आहेत.'
+    button-icon-path: 'बटण चिन्ह पथ हे बटण च्या चिन्ह / प्रतिमा पथ आहे.'
+questions:
+    module: common.questions.module
+    class: 'प्लगइन वर्ग नाव प्रविष्ट करा.'
+    label: 'प्लगइन लेबल प्रविष्ट करा.'
+    plugin-id: 'प्लगइन आयडी प्रविष्ट करा टीप: हा CKEditor प्लगइन नावाशी संबंधित आहे. Plugin.js फाइलमध्ये CKEDITOR.plugins.add() फंक्शनलचा पहिला तर्क आहे.'
+    button-name: 'बटण नाव प्रविष्ट करा सुचना: हे CKEditor बटनचे नाव आहे. ते plugin.ui.addButton() किंवा editor.ui.addRichCombo() फंक्शन्स प्लगइन.जेएस फाईलमधील पहिले तर्क आहेत.'
+    button-icon-path: 'बटण चिन्ह पथ प्रविष्ट करा.'

@@ -1,0 +1,19 @@
+description: 'Hasilkan plugin tipe field.'
+help: 'Perintah <info>generate:plugin:fieldtype</info> membantu anda menghasilkan plugin tipe field baru.'
+welcome: 'Selamat datang di penghasil plugin untuk tipe field pada Drupal'
+options:
+    module: common.options.module
+    class: 'Nama kelas plugin'
+    label: 'Label plugin'
+    plugin-id: 'ID plugin'
+    description: 'Deskripsi plugin'
+    default-widget: 'field widget bawaan dari plugin ini'
+    default-formatter: 'Pemformat field bawaan dari plugin ini'
+questions:
+    module: common.questions.module
+    class: 'Masukkan nama kelas plugin'
+    label: 'Masukkan label plugin'
+    plugin-id: 'Masukkan ID plugin'
+    description: 'Masukkan deskripsi plugin'
+    default-widget: 'Masukkan field widget bawaan dari plugin ini'
+    default-formatter: 'Masukkan pemformat field bawaan dari plugin ini'

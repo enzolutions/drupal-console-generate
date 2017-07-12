@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\HelpCommand.
+ * Contains \Drupal\Console\Generate\Command\HelpCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
-use Drupal\Console\Generator\HelpGenerator;
+use Drupal\Console\Generate\Generator\HelpGenerator;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
@@ -19,6 +19,16 @@ use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Style\DrupalStyle;
 use Drupal\Console\Utils\Site;
 use Drupal\Console\Core\Utils\ChainQueue;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class HelpCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class HelpCommand extends Command
 {

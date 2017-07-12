@@ -2,27 +2,32 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\ModuleFileCommand.
+ * Contains \Drupal\Console\Generate\Command\ModuleFileCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
-use Drupal\Console\Generator\ModuleFileGenerator;
+use Drupal\Console\Generate\Generator\ModuleFileGenerator;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Style\DrupalStyle;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class ModuleFileCommand
+ * Class ModuleFileCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class ModuleFileCommand extends Command
 {
     use CommandTrait;

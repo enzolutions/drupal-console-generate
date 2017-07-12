@@ -1,0 +1,37 @@
+description: 'Générer & enregistrer un contrôleur'
+help: 'La commande <info>generate:controller</ info> vous assiste dans la création d''un nouveau contrôleur'
+welcome: 'Bienvenue dans le générateur de contrôleur Drupal'
+options:
+    module: common.options.module
+    class: 'Nom du contrôleur'
+    routes: 'Les routes doivent être des tableaux contenants [title, method, path]'
+    services: common.options.services
+    test: 'Générer une classe de test'
+    title: 'Titre du contrôleur'
+    method: 'Nom de la méthode d''action'
+    route: 'La route de l''action'
+    controller-title: 'Titre du contrôleur'
+    method-name: 'Nom de la méthode d''action'
+questions:
+    module: common.questions.module
+    class: 'Veuillez renseigner le nom de la classe de votre contrôleur'
+    title: 'Entrez le titre de la méthode du Contrôleur (pour arrêter d''ajouter plus de méthodes, laissez vide)'
+    method: 'Entrez le nom de la méthode d''action'
+    path: 'Entrez le chemin de la route'
+    services: common.questions.services
+    test: 'Voulez-vous générer une classe de test unitaire'
+    route: 'Veuillez renseigner le chemin de la route'
+    controller-add: 'Voulez-vous ajouter une autre méthode au contrôleur'
+    controller: 'Titre du contrôleur'
+    method-name: 'Veuillez renseigner le nom de la méthode d''action'
+    other-controller-title: 'Titre du contrôleur (vide pour débuter la génération du code)'
+    controller-title: 'Titre du contrôleur'
+messages:
+    title-empty: 'Le titre doit contenir une valeur (vous devez entrer au moins une méthode)'
+    title-already-added: 'Le titre a déjà été ajouté'
+    method-name-already-added: 'Le nom de la méthode a déjà été ajouté'
+    path-already-added: 'Le chemin a déjà été ajouté'
+    route-already-added: 'La route a déjà été ajouté'
+    invalid-controller-title: 'Le titre ne peut pas être vide'
+    invalid-method-name: 'Le nom de la méthode ne peut pas être vide'
+    invalid-route: 'La route ne peut pas être vide'

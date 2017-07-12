@@ -1,0 +1,14 @@
+description: 'ब्रेकपॉईंट उत्पन्न करा.'
+help: '<info>generate:theme</info> कमांड आपल्याला नवीन ब्रेकपॉईंट बनविण्यास मदत करते.'
+welcome: 'Drupal breakpoint जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    theme: 'थीम नाव'
+    breakpoints: ब्रेकपॉइंट
+questions:
+    theme: 'थीम नाव प्रविष्ट करा (उदा. सुंदर, स्थिर)'
+    breakpoint-name: 'ब्रेकपॉईंट नाव प्रविष्ट करा.'
+    breakpoint-label: 'ब्रेकपॉईप लेबल प्रविष्ट करा.'
+    breakpoint-media-query: 'ब्रेकपॉइंट मीडिया क्वेरी प्रविष्ट करा.'
+    breakpoint-weight: 'ब्रेकपॉईंट वजन प्रविष्ट करा.'
+    breakpoint-multipliers: 'ब्रेकपॉइंट गुणक प्रविष्ट करा.'
+    breakpoint-add: 'आपण आणखी ब्रेकपॉईंट जोडू इच्छिता.'

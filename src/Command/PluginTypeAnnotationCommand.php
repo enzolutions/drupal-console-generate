@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PluginTypeAnnotationCommand.
+ * Contains \Drupal\Console\Generate\Command\PluginTypeAnnotationCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
-use Drupal\Console\Generator\PluginTypeAnnotationGenerator;
+use Drupal\Console\Generate\Generator\PluginTypeAnnotationGenerator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -20,12 +20,17 @@ use Drupal\Console\Core\Style\DrupalStyle;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Utils\StringConverter;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class PluginTypeAnnotationCommand
+ * Class PluginTypeAnnotationCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class PluginTypeAnnotationCommand extends Command
 {
     use ServicesTrait;

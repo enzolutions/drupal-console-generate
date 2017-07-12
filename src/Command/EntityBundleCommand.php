@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains Drupal\Console\Command\Generate\EntityBundleCommand.
+ * Contains Drupal\Console\Generate\Command\EntityBundleCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -15,10 +15,20 @@ use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\ServicesTrait;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
-use Drupal\Console\Generator\EntityBundleGenerator;
+use Drupal\Console\Generate\Generator\EntityBundleGenerator;
 use Drupal\Console\Core\Style\DrupalStyle;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Utils\Validator;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class EntityBundleCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class EntityBundleCommand extends Command
 {

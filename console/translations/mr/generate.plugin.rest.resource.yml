@@ -1,0 +1,19 @@
+description: 'प्लगइन उर्वरित संसाधन उत्पन्न करा.'
+help: '<info>generate:plugin:rest:resource</info> आज्ञा आपल्याला नवीन विश्रांती संसाधन उत्पन्न करण्यास मदत करते.'
+welcome: 'Drupal प्लगइन विश्रांती संसाधन जनरेटर मध्ये आपले स्वागत आहे.'
+options:
+    module: common.options.module
+    class: 'प्लगइन रेस संसाधन वर्ग.'
+    plugin-id: 'प्लगइन प्रवासी संसाधन आयडी'
+    plugin-label: 'प्लगइन उर्वरीत संसाधन लेबल.'
+    plugin-url: 'प्लगइन उर्वरित संसाधन URL'
+    plugin-states: 'प्लगइन रीस्ट रिसोर्स स्टेटस.'
+questions:
+    module: common.questions.module
+    class: 'प्लगइन उर्वरित संसाधन नाव प्रविष्ट करा.'
+    plugin-id: 'प्लगइन उर्वरित संसाधन आयडी प्रविष्ट करा.'
+    plugin-label: 'प्लगइन उर्वरित स्रोत लेबल प्रविष्ट करा.'
+    plugin-url: 'प्लगइन उर्वरित संसाधन url प्रविष्ट करा.'
+    plugin-states: 'कृपया आपल्या स्रोतामध्ये कोणत्या स्थलांतराची स्थितीे अंमलात आहेत ते निवडा (GET डीफॉल्ट म्हणून निवडलेले आहे)'
+messages:
+    selected-states: 'स्टेट्स निवडले.'

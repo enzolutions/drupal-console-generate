@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Generator\ModuleFileGenerator.
+ * Contains \Drupal\Console\Generate\Generator\ModuleFileGenerator.
  */
 
-namespace Drupal\Console\Generator;
+namespace Drupal\Console\Generate\Generator;
 
 use Drupal\Console\Core\Generator\Generator;
 

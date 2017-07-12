@@ -1,0 +1,17 @@
+description: 'Génère un plugin de bouton CKEditor.'
+help: 'La commande <info>generate:plugin:ckeditorbutton</info> vous permet de générer un plugin de bouton CKEditor.'
+welcome: 'Bienvenue sur le générateur de plugin de bouton CKEditor'
+options:
+    module: common.options.module
+    class: 'Nom de la classe du plugin'
+    label: 'Label du plugin'
+    plugin-id: 'ID du plugin. NOTE: Correspond au nom du plugin CKEditor. Il s''agit du premier argument de la fonction CKEDITOR.plugins.add() dans le fichier plugin.js.'
+    button-name: 'Nom du bouton. NOTE: Correspond au nom du bouton de CKEditor. Il s''agit du premier argument de la fonction editor.ui.addButton() ou de la fonction editor.ui.addRichCombo() dans le fichier plugin.js.'
+    button-icon-path: 'Chemin de l''icône du bouton. Il s''agit du chemin vers l''icône/image du bouton.'
+questions:
+    module: common.questions.module
+    class: 'Entrez le nom de la classe du plugin'
+    label: 'Entrez le label du plugin'
+    plugin-id: 'Entrez l''ID du plugin. NOTE: Correspond au nom du plugin CKEditor. Il s''agit du premier argument de la fonction CKEDITOR.plugins.add() dans le fichier plugin.js.'
+    button-name: 'Entrez le nom du bouton. NOTE: Correspond au nom du bouton de CKEditor. Il s''agit du premier argument de la fonction editor.ui.addButton() ou de la fonction editor.ui.addRichCombo() dans le fichier plugin.js.'
+    button-icon-path: 'Entrez le chemin de l''icône du bouton'

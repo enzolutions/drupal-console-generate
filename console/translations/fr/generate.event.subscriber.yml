@@ -1,0 +1,4 @@
+description: 'Génère un abonné à un événement'
+questions:
+    class: 'Nom de la classe'
+    callback-name: 'Nom de la fonction de callback qui traite l''événément'

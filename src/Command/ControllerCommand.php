@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains Drupal\Console\Command\Generate\ControllerCommand.
+ * Contains Drupal\Console\Generate\Command\ControllerCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -13,7 +13,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Drupal\Console\Command\Shared\ServicesTrait;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
-use Drupal\Console\Generator\ControllerGenerator;
+use Drupal\Console\Generate\Generator\ControllerGenerator;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Core\Routing\RouteProviderInterface;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -23,6 +23,16 @@ use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Core\Command\Shared\InputTrait;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Utils\Validator;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class ConfigFormBaseCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class ControllerCommand extends Command
 {

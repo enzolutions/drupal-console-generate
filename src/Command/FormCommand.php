@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains Drupal\Console\Command\Generate\FormCommand.
+ * Contains Drupal\Console\Generate\Command\FormCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -17,12 +17,22 @@ use Drupal\Console\Command\Shared\FormTrait;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Core\Style\DrupalStyle;
 use Drupal\Console\Core\Command\Shared\ContainerAwareCommandTrait;
-use Drupal\Console\Generator\FormGenerator;
+use Drupal\Console\Generate\Generator\FormGenerator;
 use Drupal\Console\Extension\Manager;
 use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Core\Render\ElementInfoManager;
 use Drupal\Core\Routing\RouteProviderInterface;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class FormCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 abstract class FormCommand extends Command
 {

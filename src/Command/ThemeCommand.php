@@ -2,17 +2,17 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\ThemeCommand.
+ * Contains \Drupal\Console\Generate\Command\ThemeCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Drupal\Console\Command\Shared\ThemeRegionTrait;
 use Drupal\Console\Command\Shared\ThemeBreakpointTrait;
-use Drupal\Console\Generator\ThemeGenerator;
+use Drupal\Console\Generate\Generator\ThemeGenerator;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -22,12 +22,17 @@ use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Utils\Validator;
 use Drupal\Core\Extension\ThemeHandler;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class ThemeCommand
+ * Class ThemeCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class ThemeCommand extends Command
 {
     use ConfirmationTrait;

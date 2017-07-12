@@ -2,15 +2,15 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\PostUpdateCommand.
+ * Contains \Drupal\Console\Generate\Command\PostUpdateCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\PostUpdateGenerator;
+use Drupal\Console\Generate\Generator\PostUpdateGenerator;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\ConfirmationTrait;
 use Symfony\Component\Console\Command\Command;
@@ -20,12 +20,17 @@ use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Utils\Site;
 use Drupal\Console\Utils\Validator;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class PostUpdateCommand
+ * Class PostUpdateCommand.
  *
- * @package Drupal\Console\Command\Generate
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
  */
+
 class PostUpdateCommand extends Command
 {
     use ModuleTrait;

@@ -1,0 +1,7 @@
+description: 'Hasilkan sebuah berkas .module'
+help: 'Perintah <info>generate:module:file</info> membantu anda menghasilkan berkas .module baru'
+welcome: 'Selamat datang kepada penghasil modul Drupal'
+options:
+    module: 'Nama modul'
+questions:
+    module: 'Masukkan nama modul'

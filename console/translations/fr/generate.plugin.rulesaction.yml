@@ -1,0 +1,22 @@
+description: 'Génère un plugin d''action de rule'
+help: 'La commande <info>generate:plugin:rulesaction</info> vous permet de générer un nouverau plugin d''action de rule.'
+welcome: 'Bienvenue sur le générateur de plugin d''action de Rules de Drupal'
+options:
+    module: common.options.module
+    class: 'Nom de la classe du plugin'
+    label: 'Label du plugin'
+    plugin-id: 'Id du plugin'
+    inputs: common.options.inputs
+    services: common.options.services
+    category: 'Catégorie du plugin'
+    context: 'Contexte du plugin'
+    type: 'Type d''action (user ou node)'
+questions:
+    module: common.questions.module
+    class: 'Entrez le nom de la classe du plugin'
+    label: 'Entrez le label du plugin'
+    plugin-id: 'Entrez l''id du plugin'
+    inputs: common.questions.inputs
+    services: common.questions.services
+    category: 'Entrez la catégorie du plugin'
+    context: 'Entrez le contexte du plugin'

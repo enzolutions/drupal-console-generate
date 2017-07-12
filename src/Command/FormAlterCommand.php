@@ -2,15 +2,15 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Command\Generate\FormAlterCommand.
+ * Contains \Drupal\Console\Generate\Command\FormAlterCommand.
  */
 
-namespace Drupal\Console\Command\Generate;
+namespace Drupal\Console\Generate\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Generator\FormAlterGenerator;
+use Drupal\Console\Generate\Generator\FormAlterGenerator;
 use Drupal\Console\Command\Shared\ServicesTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Command\Shared\MenuTrait;
@@ -27,6 +27,16 @@ use Drupal\Console\Utils\Validator;
 use Drupal\Core\Routing\RouteProviderInterface;
 use Drupal\Console\Core\Utils\ChainQueue;
 use Drupal\webprofiler\Profiler\Profiler;
+use Drupal\Console\Annotations\DrupalCommand;
+
+/**
+ * Class FormAlterCommand.
+ *
+ * @DrupalCommand (
+ *     extension="drupal/console-generate",
+ *     extensionType="library"
+ * )
+ */
 
 class FormAlterCommand extends Command
 {

@@ -1,0 +1,29 @@
+description: 'Generar un nou "%s"'
+help: 'El comandament <info>"%s"</info> t''ajuda a generar un nou "%s"'
+welcome: 'Us donem la benvinguda al generador de formaularis de Drupal'
+options:
+    module: common.options.module
+    class: 'Nom de la classe del formulari'
+    form-id: 'Identificador del formulari'
+    services: common.options.services
+    config-file: 'Add a config file'
+    inputs: common.options.inputs
+    path: 'Enter the form path'
+    menu-link-gen: 'Generate a menu link'
+    menu-link-title: 'A title for the menu link'
+    menu-parent: 'Menu parent'
+    menu-link-desc: 'A description for the menu link'
+    routing: 'Generate routing'
+questions:
+    module: common.questions.module
+    class: 'Nom de la classe del formulari'
+    form-id: 'Identificador del formulari'
+    services: common.questions.services
+    config-file: 'Do you want to generate a config file'
+    inputs: common.questions.inputs
+    routing: 'Would you like to register a route for this form'
+    path: 'Enter the route path'
+    menu_link_gen: 'Generar un enllaç de menú'
+    menu_link_title: 'El títol per l''enllaç de menú'
+    menu_parent: 'Menú pare'
+    menu_link_desc: 'La descripció per l''enllaç de menú'

@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\Console\Generator\DatabaseSettingsGenerator.
+ * Contains \Drupal\Console\Generate\Generator\DatabaseSettingsGenerator.
  */
 
-namespace Drupal\Console\Generator;
+namespace Drupal\Console\Generate\Generator;
 
 use Drupal\Console\Core\Generator\Generator;
 use Drupal\Core\DrupalKernelInterface;
